@@ -1,0 +1,117 @@
+.best{
+	min-height: rem(650px);
+	background: url('img/we_bg.jpg') center center no-repeat;
+	background-size: cover;
+}
+.best__container{
+	justify-content: center;
+	// padding-top: rem(95px);
+}
+.best__title{
+	color: #2f3234;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: rem(55px);
+}
+.best-elements{
+	display: flex;
+	align-items: flex-start;
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+	padding-top: rem(5px);
+
+	@include phones {
+		flex-direction: column;
+	}
+}
+.best-elements__item{
+	flex: 1;
+
+	@include phones {
+		padding-left: rem(5px);
+		padding-right: rem(5px);
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+
+	.best-elements__image{
+			display: flex;
+			justify-content: center;
+			margin-bottom: rem(34px);
+			.best-elements__left-picture{
+				width: rem(97px);
+				height: rem(89px);
+			}
+			.best-elements__middle-picture{
+				width: rem(73px);
+				height: rem(85px);
+			}
+			.best-elements__right-picture{
+				width: rem(88px);
+				height: rem(75px);
+			}
+			@include phones {
+				width: 20%;
+			}
+		}
+
+		.best-elements__title{
+			font-family: 'Lifehack Medium';
+			font-size: rem(24px);
+			letter-spacing: rem(-0.6px);
+			line-height: rem(28.14px);
+			color: #2f3234;
+			font-weight: 500;
+			margin-bottom: rem(25px);
+			text-align: center;
+			margin-top: 0;
+
+			@include phones {
+				margin-bottom: rem(15px);
+				white-space: nowrap;
+			}
+		}
+
+	.best-elements__text{
+		text-align: center;
+		font-family: "Ubuntu-Light";
+		color: #2f3234;
+		font-size: rem(14px);
+		opacity: 0.8;
+		line-height: rem(24.07px);
+		font-weight: 300;
+		padding-top: rem(0px);
+		
+		@include phones {
+			text-align: unset;	
+		}
+
+
+		.best-elements__new-text{
+			text-align: center;
+			margin-top: rem(0px);
+			margin-bottom: 0;
+
+			@include phones {
+				text-align: unset;	
+			}
+		}
+	}
+}
+.best-elements__pre-title{
+	@include phones {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-left: rem(25px);
+		margin-bottom: rem(15px);
+		width: 80%;
+	}
+}
+.best-elements__br{
+	@include phones {
+		display: none;
+	}
+}

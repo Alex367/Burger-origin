@@ -1,0 +1,201 @@
+*{
+	box-sizing: border-box;
+}
+
+.menu{
+	min-height: rem(650px);
+	background: url('img/menu_bg.jpg') center center no-repeat;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+}
+.menu__title{
+	position: absolute;
+	color: #ffffff;
+	top: 10%;
+	left: 10%;
+
+}
+
+.menu-acco{
+	position: absolute;
+	// width: 70%;
+	// left: 30%;
+
+	// right: 0;//*
+	// width: auto;//*
+	// width: 80%;
+	width: 100%;
+
+	list-style-type: none;
+	display: flex;
+	font-size: rem(40px);
+	margin: 0;
+	padding: 0;
+	height: 100%;//vh
+	display: flex;
+	justify-content: flex-end;
+
+	@include tablets {
+		// left: 50%;
+		width: 100%;//*
+		//left: 0;*
+	}
+	@include phones {
+		right: unset;
+		// right: 0;
+		float: right;
+		position: unset; 
+		width: 50%;
+		// left: 50%;
+		// right: unset;
+		// width: unset;
+		// width: 100%;//*
+		//left: 0;*
+	}
+	.menu-acco__items{
+		position: relative;
+		//max-width: rem(700px);*
+		display: block;
+		// width: 800px;
+		width: 80px;
+		transition: .5s;
+
+		@include phones {
+			width: 100px;
+			transition: unset;
+		}
+	}
+}
+.testing{
+	height: 100%;
+}
+// ***
+.menu-acco__items-hide.menu-acco__items-hide-active{
+	position: absolute;
+	width: 80px;
+	height: 100%;
+	right: 0;
+	display: block;
+}
+.menu-acco__items-hide.menu-acco__items-hide-phone{
+	z-index: 1;
+	width: calc(100%/6);
+	height: 100%;
+	position: absolute;
+	display: block;
+}
+.menu-acco__link{
+	cursor: pointer;
+	width: 80px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	float: left;
+	background-size: cover;
+	height: 100%;
+	// min-height: rem(650px);
+	position: relative;
+	display: block;
+
+	@include tablets {
+		width: 80px;
+	}
+
+	@include phones {
+		//width: 60px;
+		// width: 63px;
+		width: 100%;
+	}
+
+	.menu-acco__link-text{
+		white-space: nowrap;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform-origin: 0 center;
+		transform: rotate(-90deg) translateX(rem(25px));
+		margin-top: rem(-50px);
+		font-family: 'Gagalin-Regular';
+		color: #ffffff;
+		font-weight: 400;
+		line-height: rem(63.75px);
+		&:hover{
+			color: #f9b43b;
+		}
+		@include tablets {
+			&:hover{
+				color: #ffffff;
+			}
+		}
+	}
+}
+.menu-acco__link.menu-acco__link-active{
+	position: absolute;
+	left: 0;
+	width: 55px;
+	z-index: 999; 
+}
+
+.menu-acco__content{
+		background-color: #2f3234;
+		opacity: 0.93;
+		height: 100%;
+		min-height: rem(650px);
+		font-family: "Ubuntu-Light";
+		line-height: rem(24px);
+		font-weight: 300;
+		font-size: rem(14px);
+		color: #ffffff;
+		float: left; //hide
+		display: block;
+
+		width: 0;
+		overflow: hidden;
+
+	.menu-acco__text{
+		text-align: left;
+		padding-top: rem(62px);
+		padding-left: rem(120px);
+		padding-right: rem(80px);
+		padding-bottom: rem(30px);
+
+		@include tablets {
+			font-size: 12px;
+			text-align: left;
+			padding-right: 45px;
+			padding-left: 105px;
+			padding-bottom: 0;
+		}
+		@include phones {
+			line-height: 18px;
+			padding-left: 80px;
+			padding-right: 30px;
+			padding-bottom: 0;
+			padding-top: 50px;
+		}
+	}
+}
+.menu-acco__content.menu-acco__content-active{
+	width: 100%;
+	overflow: unset;
+	float: unset;
+}
+.menu-acco__content.menu-acco__content-phone{
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+	right: 0;
+	float: unset;
+	overflow: unset;
+}
+.section-menu{
+	display: none;
+	opacity: 0.7;
+	cursor: pointer;
+}
+.section-menu.section-menu-phone{
+	display: block;
+	position: absolute;
+	right: 15px;
+	top: 20px;
+}

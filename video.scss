@@ -1,0 +1,154 @@
+*{
+	box-sizing: border-box;
+}
+.video{
+	min-height: rem(650px);
+	background: url("img/bg_video.jpg") center center no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+  	align-items: center;
+	  .container {
+	    align-items: center;  
+	}
+}
+.container-video-title{
+	color: #2f3234;
+	text-align: center;
+	@include phones {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	margin-bottom: 25px;
+}
+.player{
+	position: relative;
+	display: inline-block;
+	width: 75%;//new
+	height: 60%;//new
+	cursor: pointer;
+
+	@include tablets {
+		width: 100%;
+	}
+	@include phones {
+		height: 40%;
+	}
+}
+.player__bg{
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	&.hidden{
+		display: none;
+	}
+}
+.player-play{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: rem(180px);
+	height: rem(180px);
+	margin-top: rem(-90px);
+	margin-left: rem(-90px);
+	cursor: pointer;
+	fill: #ffffff;
+	opacity: .9;
+
+	&.hidden2{
+		display: none;
+	}
+	@include tablets {
+		fill: black;
+	}
+}
+.player__yt-controls{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: rem(35px);
+	width: 100%; //660px
+	right: 0;
+	background-color: #3e3e3e;
+	display: flex;
+	align-items: center;
+}
+.controls-play{
+	width: rem(40px);
+	height: rem(35px);
+	fill: #626262;
+	cursor: pointer;
+}
+.controls-playback{
+	position: absolute;
+	height: rem(4px);
+	width: 55%;//446
+	background: #626262;
+	top: rem(15px);
+	left: rem(50px);
+	cursor: pointer;
+
+	@include tablets {
+		width: 60%;
+	}
+}
+.controls-playback-button {
+  background: #626262;
+  border-radius: rem(50px);
+  border: none;
+  width: rem(12px);
+  height: rem(12px);
+  padding: 0;
+  position: absolute;
+  top: rem(-4px);
+  transform: translateX(-50%);
+  left: 0;
+  cursor: pointer;
+}
+.controls-volume{
+	position: absolute;
+	right: 11%; //98
+	cursor: pointer;
+	width: rem(40px);
+	height: rem(35px);
+	fill:#626262;
+	@include tablets {
+		display: none;
+	}
+}
+.controls-change-volume{
+	position: absolute;
+  	height: rem(4px);
+  	width: rem(58px);
+  	background: #626262;
+  	top: rem(15px);
+  	right: rem(10px);
+  	@include tablets {
+		display: none;
+	}
+}
+.controls-change-volume__button{
+	background: #626262;
+	border-radius: rem(50px);
+	border: none;
+	width: rem(12px);
+	height: rem(12px);
+	padding: 0;
+	position: absolute;
+	top: rem(-4px);
+	right: 0;
+	cursor: pointer;
+}
+.player__duration {
+  position: absolute;
+  top: 4px;
+  right: 18%;
+  color: #626262;
+  font-weight: bold;
+
+	@include tablets {
+		right: 4%;
+	}
+}

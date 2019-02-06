@@ -1,0 +1,204 @@
+.reviews{
+	min-height: rem(650px);
+	position: relative;
+}
+.reviews-elements{
+	background: black;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: rem(0px);
+	padding-left: rem(0px);
+	margin-bottom: rem(0px);
+	list-style-type: none;
+	z-index: 0;
+}
+.reviews-elements__items{
+	height: 50%;
+	width: 25%;
+	background-repeat: no-repeat;
+	background-position: center center; 
+	background-size: cover;
+	filter: grayscale(100%);
+	position: relative;
+	display: none;
+
+	@include tablets {
+		height: 25%;
+		width: 50%;
+	}
+	@include phones {
+		display: flex;
+		justify-content: center;
+	}
+	&.loaded{
+		display: block;
+	}
+	&.loading img{
+    	opacity: 1;
+	}
+}
+.reviews-elements__hover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(#141414, .7);
+	color: white;
+	opacity: 0;
+	visibility: hidden;
+	padding-left: rem(20px);
+	padding-top: rem(50px);
+	padding-right: rem(45px);
+	padding-bottom: rem(5px);
+	transition: .5s;
+	// z-index: 9999;
+
+	@include tablets {
+		padding: 0;
+		text-align: center;
+		transition: .2s;
+	}
+	@include phones {
+		transition: unset;
+	}
+
+	.reviews-elements__title{
+		font-family: 'Gagalin-Regular';
+		color: #ffffff;
+		font-size: rem(14px);
+		font-weight: 400;
+		line-height: rem(28.11px);
+		margin-bottom: rem(30px);
+
+		@include phones {
+			font-size: rem(24px);
+			padding-top: rem(50px);
+			padding-bottom: rem(20px);
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		@include tablets {
+			margin-bottom: rem(5px);
+			margin-top: 5px;
+		}
+	}
+	.reviews-elements__text{
+		font-family: "Ubuntu-Light";
+		font-size: rem(14px);
+		font-weight: 300;
+		line-height: rem(24px);
+		color: #ffffff;
+		margin-bottom: rem(17px);
+		display: flex;
+		text-align: left;
+
+		@include tablets {
+			text-align: center;
+			font-size: 0.750rem;
+			margin-bottom: rem(5px);
+			padding-left: rem(5px);
+			padding-right: rem(5px);
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+		@include phones {
+			display: none;
+			margin-bottom: 10px;
+		}
+	}
+}
+.rev-hover-2 {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.button--bg--black{
+	position: absolute;
+	background-color: #2f3234;
+	text-transform: uppercase;
+	color: #d5d6d6;
+	cursor: pointer;
+
+	@include tablets {
+		position: unset;
+	}
+
+	@include phones {
+		position: unset;
+	}
+}
+.button--bg--black span{
+	@include phones {
+		display: none;
+	}
+}
+.button--bg--black:after{
+	@include phones {
+		content: 'Читать отзыв';
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+}
+.reviews-message{
+	display: none;
+}
+.alert-message{
+	display: none;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	background-color: #2f3234; 
+	width: 100%;
+	height: 100%;
+	background: rgba(47, 50, 52, 0.7);
+	font-size: 14px;
+	font-family: "Ubuntu-Medium";
+	font-weight: 100;
+	z-index: 2;
+	@include phones {
+		font-size: 13px;
+	}
+}
+.alert-message-open{
+		width: 300px;
+		// height: 110px;
+		height: 150px;
+		background-color: #ffffff;
+		border-radius: 5px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -75px;
+		margin-left: -150px;
+
+		@include phones {
+			width: 250px;
+			height: 130px;
+			margin-left: -125px;
+			margin-top: -65px;
+		}
+		.reviews__message-inner-text{
+			font-size: 12px;
+			margin: 0;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: justify;
+			margin-bottom: 15px;
+			margin-top: 5px;
+
+			@include phones {
+				font-size: 11px;
+				margin-bottom: 10px;
+			}
+		}
+		.btn-reviews{
+			color: #d5d6d6;
+			background-color: #2f3234;
+			border: 0;
+			cursor: pointer;
+		}
+}

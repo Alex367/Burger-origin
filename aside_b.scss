@@ -1,0 +1,65 @@
+.fixed-menu {
+  @include tablets {
+    display: none;
+  }
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: rem(90px);
+  right: rem(54px);
+  z-index: 999;
+  
+  list-style:none;
+
+  .active{
+    .fixed-menu__link:before{
+
+        width: rem(14px);
+        height: rem(14px);
+        opacity: 1;
+        border: rem(1px) solid #ffffff;
+    }
+  }
+}
+
+.fixed-menu__item {
+  margin-bottom: rem(5px);
+}
+
+.fixed-menu__link {
+  width: rem(16px);
+  height: rem(16px);
+  display: block;
+  position: relative;
+
+  &:before, &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
+  &:before{
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .3s;
+  } 
+
+  &:after{
+    width: rem(6px);
+    height: rem(6px);
+    background: #ffffff;
+  }
+
+  &:hover:before{
+    width: rem(14px);
+    height: rem(14px);
+    opacity: 1;
+    border: rem(1px) solid #ffffff;
+  }
+}

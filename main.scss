@@ -1,0 +1,19 @@
+//breakpoints
+$tablets: 768px;
+$phones: 480px;//74px;
+
+@import "media";
+
+@import "font.scss";
+
+@import "first_screen.scss";
+
+@import "aside_b.scss";
+@import "best.scss";
+@import "burgers.scss";
+@import "team.scss";
+@import "menu.scss";
+@import "reviews.scss";
+@import "video.scss";
+@import "delivery.scss";
+@import "contacts.scss";

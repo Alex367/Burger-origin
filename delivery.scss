@@ -1,0 +1,320 @@
+*{
+	box-sizing: border-box;
+}
+.delivery{
+	min-height: rem(650px);
+	background: url("img/bg_delivery.jpg") center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.delivery__title{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-bottom: rem(44px);
+	@include phones {
+		margin-bottom: rem(15px);
+		line-height: 4.313rem;
+	}
+}
+.form{
+	color: #ffffff;
+	font-family: "Ubuntu-Light";
+	font-size: rem(14px);
+	line-height: rem(24px);
+	font-weight: 300;
+
+	@include tablets {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: rem(0px) 16%;
+	}
+	@include phones {
+		padding: 0;
+	}
+}
+.form-left{
+	float: left;
+	width: 50%;
+	padding-right: rem(20px);
+
+	@include tablets {
+		width: 100%;
+		padding: 0;
+	}
+}
+.form-left__row{
+	margin-bottom: rem(20px);
+	display: flex;
+
+	.form-left__block{
+		flex: 1;
+		margin-left: rem(20px);
+
+		&:first-child{
+			margin-left: 0;
+		}
+		@include phones {
+			margin-left: rem(10px);
+		}
+	}
+	@include phones {
+		margin-bottom: rem(5px);
+	}
+} 
+.form-left__input{
+	border: initial;
+	padding: rem(5px) rem(20px);
+	background: #ffffff;
+	border-radius: rem(5px);
+	width: 100%;
+	border: rem(2px) solid transparent;
+	&:hover{
+		border: rem(2px) solid #f9b43b;
+	}
+	@include tablets {
+		&:hover{
+			border: rem(2px) solid transparent;;
+		}
+	}
+}
+#delivery-phone:required{
+	border: rem(2px) solid transparent;
+} 
+
+.form-right{
+	float: right;
+	width: 50%;
+	.form-right__row{
+		margin-bottom: rem(20px);
+	}
+
+	@include tablets {
+		width: 100%;
+	}
+	@include phones {
+		text-align: center;
+		.comment{
+			text-align: left;
+		}
+	}
+}
+.form-right__input-big{
+	border: initial;
+	background-color: #ffffff;
+	border-radius: rem(5px);
+	width: rem(460px);
+	height: rem(110px);
+	padding: rem(5px) rem(20px);
+	padding-top: rem(10px);
+
+	&:hover{
+		border: rem(1px) solid #d1cfcb;
+	}
+
+	@include tablets {
+		width: 100%;
+	}
+}
+.form-floor{
+	@include phones {
+		display: none;
+	}
+}
+
+//*** radio hidden
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: rem(1px);
+	width: rem(1px);
+	margin: rem(-1px);
+	padding: 0;
+	border: 0;
+}
+.form-right__input{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+.form-right__input:checked + .fake-radio{
+	border: rem(1px) solid #ffffff;
+}
+.form-right__input:checked + .fake-radio:after{
+	display: inline-block;
+}
+.form-right__input:focus + .fake-radio{
+	border: rem(1px) solid #ffffff;
+}
+.form-right__title{
+	display: inline-block;
+  	vertical-align: middle;
+ 	margin: 0;
+}
+.fake-radio{
+  display: inline-block;
+  vertical-align: middle;
+  width: rem(15px);
+  height: rem(15px);
+  border-radius: 50%;
+  border: rem(1px) solid #ffffff; 
+  position: relative;
+  background-color: #ffffff;
+}
+.fake-radio:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: rem(7px);
+  height: rem(7px);
+  background-color: #e35028;
+  border-radius: 50%;
+  display: none;
+}
+//******
+
+//******checkbox hidden
+.form-right__input-box{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+.form-right__input-box:checked + .fake-checkbox{
+	border: rem(1px) solid #ffffff;
+}
+.form-right__input-box:checked + .fake-checkbox:after{
+	display: inline-block;
+}
+.form-right__input-box:focus + .fake-checkbox{
+	border: rem(1px) solid #ffffff;
+}
+.form-right__title{
+	display: inline-block;
+  	vertical-align: middle;
+ 	margin: 0;
+}
+.fake-checkbox{
+  display: inline-block;
+  vertical-align: middle;
+  width: rem(15px);
+  height: rem(15px);
+  position: relative;
+  background-color: #ffffff;
+}
+.fake-checkbox:after {
+  // content: "\2714";
+  content: url('img/check.png');
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-81%, -165%);
+  width: rem(7px);
+  height: rem(7px);
+  color: #e35028;
+  display: none;
+  font-weight: 900;
+
+  @include phones {
+	 transform: translate(-110%, -165%);
+	}
+}
+//*********
+
+.form-right__title{
+	padding-right: rem(25px);
+}
+.btn-red{
+	cursor: pointer;
+	border: 0;
+}
+.btn-black{
+	cursor: pointer;
+	  background: transparent;
+	  font-family: "Ubuntu-Light";
+	  text-transform: capitalize;
+	  font-size: rem(14px);
+		font-weight: 300;
+		line-height: rem(24px);
+		border: 0;
+}
+// .delivery-ok{
+// 	display: none;
+// 	text-align: center;
+// 	position: absolute;
+// 	top: 0;
+// 	background-color: #2f3234; 
+// 	width: 100%;
+// 	height: 100%;
+// 	background: rgba(47, 50, 52, 0.5);
+// 	font-size: 14px;
+// 	font-family: "Ubuntu-Medium";
+// 	font-weight: 100;
+// 	@include phones {
+// 		font-size: 13px;
+// 	}
+
+// 	// .alert-message{
+// 	// 	width: 300px;
+// 	// 	height: 110px;
+// 	// 	background-color: #ffffff;
+// 	// 	border-radius: 5px;
+// 	// 	position: absolute;
+// 	// 	top: 50%;
+// 	// 	left: 50%;
+// 	// 	margin-top: -55px;
+// 	// 	margin-left: -150px;
+
+// 	// 	@include phones {
+// 	// 		width: 250px;
+// 	// 		height: 90px;
+// 	// 		margin-left: -125px;
+// 	// 		margin-top: -45px;
+// 	// 	}
+// 	// }
+// }
+.delivery-ok{
+	background: rgba(47, 50, 52, 0.5);
+}
+.delivery-ok__message{
+	height: 110px;
+	@include phones {
+		height: 90px;
+	}
+}
+.delivery-ok__message-text{
+	margin-bottom: 25px;
+	font-size: 15px;
+	@include phones {
+		font-size: 13px;
+	}
+}
+.btn-delivery{
+	cursor: pointer;
+	border: 0;
+}
+// .form__error {
+// 	color: red; 
+// 	text-align: left;
+// 	font-size: 12px;
+// 	display: block;
+// 	margin-top: 3px;
+// 	display: none;
+// }
+// input:valid:not(:placeholder-shown) {
+// 	border-color: green;
+// }
+
+// input:invalid:not(:placeholder-shown) {
+// 	border-color: red;
+// }
+// input:invalid:not(:placeholder-shown) + .form__error {
+// 	display: block;
+// }
+
+
