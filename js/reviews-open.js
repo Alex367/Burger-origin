@@ -1,18 +1,10 @@
-// window.onload = function() {
-// 	$('.reviews-elements__items').addClass('loaded');
-// };
-// function imgLoaded(img){
-//     var $img = $(img);
-//     $img.parent().addClass('loaded');
-// };
-$('.reviews-elements__items').ready(function(){
+$('.reviews-elements').ready(function(){
 	$('.reviews-elements__items').addClass('loaded');
-});
-
+});//load photo
+//reviews
 var rev_open = $('.reviews-message');
 var rev_close = $('.btn-reviews');
 
-//reviews
 var reviews_elements__items = $('.reviews-elements__items');
 var reviews_elements__hover = $('.reviews-elements__hover');
 

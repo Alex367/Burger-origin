@@ -1,7 +1,6 @@
 var menu_acco__items = $('.menu-acco__items');
 
 menu_acco__items.on('click', function () {
-
 	if($(this).children('.menu-acco__link').width() == 80){
 		if($(this).hasClass('menu-acco__items-active')){
 			$(this).removeClass('menu-acco__items-active');
@@ -43,5 +42,4 @@ menu_acco__items.on('click', function () {
 			$(this).find('.link-text-hover').css('color', '#ffffff');
 		}
 	}
-
 });

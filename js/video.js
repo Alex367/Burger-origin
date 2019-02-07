@@ -39,7 +39,6 @@ function onPlayerReady(){
   }, 1000);
 }
 
-
 function onPlayerStateChange(event) {
   switch (event.data) {
     case 1:
@@ -129,7 +128,7 @@ $(".controls-change-volume").on('click', e =>{
   const bar_vol = $(e.currentTarget);
   const newButtonPosition_vol = e.pageX - bar_vol.offset().left;//replace
   const clickedPercent_vol = (newButtonPosition_vol / bar_vol.width()) * 100; //replace percent
-  // how many percent i clicked
+  // how percent i clicked
   player.setVolume(clickedPercent_vol);
 
   $(".controls-change-volume__button").css({

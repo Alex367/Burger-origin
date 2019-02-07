@@ -1,101 +1,101 @@
-const section = $('.section');
-const display = $('.main-content');
-let inScroll = false;
+// const section = $('.section');
+// const display = $('.main-content');
+// let inScroll = false;
 
-const mobileDetect = new MobileDetect(window.navigator.userAgent);
-const isMobile = mobileDetect.mobile();
-
-
-
-if (isMobile) {
-	const setActiveMenuItem = itemEq => {
-  $('.fixed-menu__item').eq(itemEq).addClass('active')
-    .siblings().removeClass('active')
-} 
-
-const performTransition = sectionEq => {
-  const position = `${sectionEq * -100}%`;
-
-  if (inScroll) return;
-
-  inScroll = true;
-
-  section
-    .eq(sectionEq)
-    .addClass("active")
-    .siblings()
-    .removeClass("active");
-
-  display.css({
-    transform: `translate(0, ${position})`,
-    "-webkit-transform": `translate(0, ${position})`
-  });
-
-  setTimeout(() => {
-    inScroll = false;
-    setActiveMenuItem(sectionEq);
-  }, 700); // продолжительность анимации + 300ms - потому что закончится инерция
-};
-
-const scrollToSection = direction => {
-  const activeSection = section.filter('.active');
-  const nextSection = activeSection.next();
-  const prevSection = activeSection.prev();
-
-  if (direction === "up" && prevSection.length) {
-    performTransition(prevSection.index());
-  }
-
-  if (direction === "down" && nextSection.length) {
-    performTransition(nextSection.index());
-  }
-};
-
-$(document).on({
-  wheel: e => {
-    const deltaY = e.originalEvent.deltaY;
-    const direction = deltaY > 0 ? "down" : "up";
-
-    scrollToSection(direction);
-  },
-  keydown: e => {
-    switch (e.keyCode) {
-      case 40:
-        scrollToSection("down");
-        break;
-
-      case 38:
-        scrollToSection("up");
-        break;
-    }
-  },
-  touchmove: e => e.preventDefault()
-
-  // touchstart touchend touchmove 
-});
+// const mobileDetect = new MobileDetect(window.navigator.userAgent);
+// const isMobile = mobileDetect.mobile();
 
 
-// $('[data-scroll-to]').on('click', e => {
-//   e.preventDefault();
 
-//   const target = parseInt($(e.currentTarget).attr('data-scroll-to'));
+// if (isMobile) {
+// 	const setActiveMenuItem = itemEq => {
+//   $('.fixed-menu__item').eq(itemEq).addClass('active')
+//     .siblings().removeClass('active')
+// } 
+
+// const performTransition = sectionEq => {
+//   const position = `${sectionEq * -100}%`;
+
+//   if (inScroll) return;
+
+//   inScroll = true;
+
+//   section
+//     .eq(sectionEq)
+//     .addClass("active")
+//     .siblings()
+//     .removeClass("active");
+
+//   display.css({
+//     transform: `translate(0, ${position})`,
+//     "-webkit-transform": `translate(0, ${position})`
+//   });
+
+//   setTimeout(() => {
+//     inScroll = false;
+//     setActiveMenuItem(sectionEq);
+//   }, 700); // продолжительность анимации + 300ms - потому что закончится инерция
+// };
+
+// const scrollToSection = direction => {
+//   const activeSection = section.filter('.active');
+//   const nextSection = activeSection.next();
+//   const prevSection = activeSection.prev();
+
+//   if (direction === "up" && prevSection.length) {
+//     performTransition(prevSection.index());
+//   }
+
+//   if (direction === "down" && nextSection.length) {
+//     performTransition(nextSection.index());
+//   }
+// };
+
+// $(document).on({
+//   wheel: e => {
+//     const deltaY = e.originalEvent.deltaY;
+//     const direction = deltaY > 0 ? "down" : "up";
+
+//     scrollToSection(direction);
+//   },
+//   keydown: e => {
+//     switch (e.keyCode) {
+//       case 40:
+//         scrollToSection("down");
+//         break;
+
+//       case 38:
+//         scrollToSection("up");
+//         break;
+//     }
+//   },
+//   touchmove: e => e.preventDefault()
+
+//   // touchstart touchend touchmove 
+// });
 
 
-//   performTransition(target);
+// // $('[data-scroll-to]').on('click', e => {
+// //   e.preventDefault();
 
-// })
-  $(document).swipe({
-    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-      /**
-       * плагин возвращает фактическое...
-       * ...
-       */
-      const scrollDirection = direction === 'down' ? 'up' : 'down';
+// //   const target = parseInt($(e.currentTarget).attr('data-scroll-to'));
+
+
+// //   performTransition(target);
+
+// // })
+//   $(document).swipe({
+//     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+//       /**
+//        * плагин возвращает фактическое...
+//        * ...
+//        */
+//       const scrollDirection = direction === 'down' ? 'up' : 'down';
       
-      scrollToSection(scrollDirection);
-    }
-  });
-}
+//       scrollToSection(scrollDirection);
+//     }
+//   });
+// }
 
 
 
