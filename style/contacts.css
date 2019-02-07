@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 15 of C:\xampp\htdocs\burger_origin\delivery.scss, in `phones'
-        from line 15 of C:\xampp\htdocs\burger_origin\delivery.scss
+        on line 17 of C:\xampp\htdocs\burger_origin\style\contacts.scss, in `phones'
+        from line 17 of C:\xampp\htdocs\burger_origin\style\contacts.scss
 
-10: .delivery__title{
-11: 	margin: 0;
-12: 	padding: 0;
-13: 	text-align: center;
-14: 	margin-bottom: rem(44px);
-15: 	@include phones {
-16: 		margin-bottom: rem(15px);
-17: 		line-height: 4.313rem;
-18: 	}
-19: }
-20: .form{
+12: 	position: absolute;
+13: 	top: 0;
+14: 	width: 100%;
+15: 	height: 95%;
+16: 
+17: 	@include phones {
+18: 		height: 90%;
+19: 	}
+20: 
+21: 	// position: relative;
+22: 	// .contacts__img-map1{
 
 Backtrace:
-C:\xampp\htdocs\burger_origin\delivery.scss:15:in `phones'
-C:\xampp\htdocs\burger_origin\delivery.scss:15
+C:\xampp\htdocs\burger_origin\style\contacts.scss:17:in `phones'
+C:\xampp\htdocs\burger_origin\style\contacts.scss:17
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 15 of C:\xampp\htdocs\burger_origin\delivery.scss, in `phones'\A         from line 15 of C:\xampp\htdocs\burger_origin\delivery.scss\A \A 10: .delivery__title{\A 11: 	margin: 0;\A 12: 	padding: 0;\A 13: 	text-align: center;\A 14: 	margin-bottom: rem(44px);\A 15: 	@include phones {\A 16: 		margin-bottom: rem(15px);\A 17: 		line-height: 4.313rem;\A 18: 	}\A 19: }\A 20: .form{"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 17 of C:\xampp\htdocs\burger_origin\style\contacts.scss, in `phones'\A         from line 17 of C:\xampp\htdocs\burger_origin\style\contacts.scss\A \A 12: 	position: absolute;\A 13: 	top: 0;\A 14: 	width: 100%;\A 15: 	height: 95%;\A 16: \A 17: 	@include phones {\A 18: 		height: 90%;\A 19: 	}\A 20: \A 21: 	// position: relative;\A 22: 	// .contacts__img-map1{"; }

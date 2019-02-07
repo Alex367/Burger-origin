@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'tablets'.
-        on line 34 of C:\xampp\htdocs\burger_origin\team.scss, in `tablets'
-        from line 34 of C:\xampp\htdocs\burger_origin\team.scss
+Error: Undefined mixin 'phones'.
+        on line 18 of C:\xampp\htdocs\burger_origin\style\video.scss, in `phones'
+        from line 18 of C:\xampp\htdocs\burger_origin\style\video.scss
 
-29: 	justify-content: center;
-30: 	padding: rem(50px);
-31: 	padding-top: rem(113px);
-32: 	padding-left: rem(97px);
-33: 
-34: 	@include tablets {
-35: 		width: 100%;
-36: 		left: 0;
-37: 		text-align: center;
-38: 		padding-top: rem(80px);
-39: 	}
+13: 	}
+14: }
+15: .container-video-title{
+16: 	color: #2f3234;
+17: 	text-align: center;
+18: 	@include phones {
+19: 		padding-left: 10%;
+20: 		padding-right: 10%;
+21: 	}
+22: 	margin-bottom: 25px;
+23: }
 
 Backtrace:
-C:\xampp\htdocs\burger_origin\team.scss:34:in `tablets'
-C:\xampp\htdocs\burger_origin\team.scss:34
+C:\xampp\htdocs\burger_origin\style\video.scss:18:in `phones'
+C:\xampp\htdocs\burger_origin\style\video.scss:18
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 34 of C:\xampp\htdocs\burger_origin\team.scss, in `tablets'\A         from line 34 of C:\xampp\htdocs\burger_origin\team.scss\A \A 29: 	justify-content: center;\A 30: 	padding: rem(50px);\A 31: 	padding-top: rem(113px);\A 32: 	padding-left: rem(97px);\A 33: \A 34: 	@include tablets {\A 35: 		width: 100%;\A 36: 		left: 0;\A 37: 		text-align: center;\A 38: 		padding-top: rem(80px);\A 39: 	}"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 18 of C:\xampp\htdocs\burger_origin\style\video.scss, in `phones'\A         from line 18 of C:\xampp\htdocs\burger_origin\style\video.scss\A \A 13: 	}\A 14: }\A 15: .container-video-title{\A 16: 	color: #2f3234;\A 17: 	text-align: center;\A 18: 	@include phones {\A 19: 		padding-left: 10%;\A 20: 		padding-right: 10%;\A 21: 	}\A 22: 	margin-bottom: 25px;\A 23: }"; }

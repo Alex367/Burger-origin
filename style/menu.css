@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 27 of C:\xampp\htdocs\burger_origin\reviews.scss, in `tablets'
-        from line 27 of C:\xampp\htdocs\burger_origin\reviews.scss
+        on line 32 of C:\xampp\htdocs\burger_origin\style\menu.scss, in `tablets'
+        from line 32 of C:\xampp\htdocs\burger_origin\style\menu.scss
 
-22: 	background-size: cover;
-23: 	filter: grayscale(100%);
-24: 	position: relative;
-25: 	display: none;
-26: 
-27: 	@include tablets {
-28: 		height: 25%;
-29: 		width: 50%;
-30: 	}
-31: 	@include phones {
-32: 		display: flex;
+27: 	padding: 0;
+28: 	height: 100%;//vh
+29: 	display: flex;
+30: 	justify-content: flex-end;
+31: 
+32: 	@include tablets {
+33: 		width: 100%;//*
+34: 	}
+35: 	@include phones {
+36: 		right: unset;
+37: 		float: right;
 
 Backtrace:
-C:\xampp\htdocs\burger_origin\reviews.scss:27:in `tablets'
-C:\xampp\htdocs\burger_origin\reviews.scss:27
+C:\xampp\htdocs\burger_origin\style\menu.scss:32:in `tablets'
+C:\xampp\htdocs\burger_origin\style\menu.scss:32
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 27 of C:\xampp\htdocs\burger_origin\reviews.scss, in `tablets'\A         from line 27 of C:\xampp\htdocs\burger_origin\reviews.scss\A \A 22: 	background-size: cover;\A 23: 	filter: grayscale(100%);\A 24: 	position: relative;\A 25: 	display: none;\A 26: \A 27: 	@include tablets {\A 28: 		height: 25%;\A 29: 		width: 50%;\A 30: 	}\A 31: 	@include phones {\A 32: 		display: flex;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 32 of C:\xampp\htdocs\burger_origin\style\menu.scss, in `tablets'\A         from line 32 of C:\xampp\htdocs\burger_origin\style\menu.scss\A \A 27: 	padding: 0;\A 28: 	height: 100%;//vh\A 29: 	display: flex;\A 30: 	justify-content: flex-end;\A 31: \A 32: 	@include tablets {\A 33: 		width: 100%;//*\A 34: 	}\A 35: 	@include phones {\A 36: 		right: unset;\A 37: 		float: right;"; }

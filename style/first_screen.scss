@@ -40,10 +40,6 @@ body{
 	width: 100%;
 	min-height: 100%;
 	overflow: hidden;
-	// @include phones {
-	// 	min-height: unset;
-	// 	height: 100%; //*******one
-	// }
 }
 .open-menu{
 	display: none;
@@ -116,7 +112,7 @@ body{
 }
 
 .first{
-	background: url('img/bg1.jpg') center center no-repeat;
+	background: url('../img/bg1.jpg') center center no-repeat;
 	background-size: cover;
 	width: 100%;
 }
@@ -248,10 +244,7 @@ body{
 
 	@include phones {
 		display: unset;
-
-		// .first__middle-picture{
-		// 	text-align: center;
-		// }
+		
 		.first__middle-img{
 		    max-width: 85%;
 		}

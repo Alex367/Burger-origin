@@ -4,7 +4,7 @@
 
 .menu{
 	min-height: rem(650px);
-	background: url('img/menu_bg.jpg') center center no-repeat;
+	background: url('../img/menu_bg.jpg') center center no-repeat;
 	background-size: cover;
 	position: relative;
 	width: 100%;
@@ -19,14 +19,7 @@
 
 .menu-acco{
 	position: absolute;
-	// width: 70%;
-	// left: 30%;
-
-	// right: 0;//*
-	// width: auto;//*
-	// width: 80%;
 	width: 100%;
-
 	list-style-type: none;
 	display: flex;
 	font-size: rem(40px);
@@ -37,27 +30,17 @@
 	justify-content: flex-end;
 
 	@include tablets {
-		// left: 50%;
 		width: 100%;//*
-		//left: 0;*
 	}
 	@include phones {
 		right: unset;
-		// right: 0;
 		float: right;
 		position: unset; 
 		width: 50%;
-		// left: 50%;
-		// right: unset;
-		// width: unset;
-		// width: 100%;//*
-		//left: 0;*
 	}
 	.menu-acco__items{
 		position: relative;
-		//max-width: rem(700px);*
 		display: block;
-		// width: 800px;
 		width: 80px;
 		transition: .5s;
 
@@ -96,7 +79,6 @@
 	float: left;
 	background-size: cover;
 	height: 100%;
-	// min-height: rem(650px);
 	position: relative;
 	display: block;
 
@@ -105,8 +87,6 @@
 	}
 
 	@include phones {
-		//width: 60px;
-		// width: 63px;
 		width: 100%;
 	}
 

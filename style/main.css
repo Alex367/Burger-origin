@@ -1,32 +1,32 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Gagalin-Regular';
-  src: url("fonts/Gagalin/Gagalin-Regular.otf") format("opentype");
+  src: url("../fonts/Gagalin/Gagalin-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Lifehack Medium';
-  src: url("fonts/Lifehack Medium.otf") format("opentype");
+  src: url("../fonts/Lifehack Medium.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Ubuntu-Medium';
-  src: url("fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
+  src: url("../fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Ubuntu-Light';
-  src: url("fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");
+  src: url("../fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Ubuntu-B';
-  src: url("fonts/Ubuntu/Ubuntu-B.ttf") format("truetype");
+  src: url("../fonts/Ubuntu/Ubuntu-B.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Ubuntu-Regular';
-  src: url("fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 * {
@@ -124,7 +124,7 @@ body {
   height: 100vh; }
 
 .first {
-  background: url("img/bg1.jpg") center center no-repeat;
+  background: url("../img/bg1.jpg") center center no-repeat;
   background-size: cover;
   width: 100%; }
 
@@ -352,7 +352,7 @@ body {
 
 .best {
   min-height: 40.625rem;
-  background: url("img/we_bg.jpg") center center no-repeat;
+  background: url("../img/we_bg.jpg") center center no-repeat;
   background-size: cover; }
 
 .best__container {
@@ -836,7 +836,7 @@ body {
 
 .team {
   min-height: 40.625rem;
-  background: url("img/bg_team.jpg") center center no-repeat;
+  background: url("../img/bg_team.jpg") center center no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -955,7 +955,7 @@ body {
 
 .menu {
   min-height: 40.625rem;
-  background: url("img/menu_bg.jpg") center center no-repeat;
+  background: url("../img/menu_bg.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
   width: 100%; }
@@ -1210,6 +1210,7 @@ body {
         margin-bottom: 0.3125rem;
         padding-left: 0.3125rem;
         padding-right: 0.3125rem;
+        line-height: 1.2rem;
         padding-left: 35px;
         padding-right: 35px; } }
     @media screen and (max-width: 480px) {
@@ -1303,7 +1304,7 @@ body {
 
 .video {
   min-height: 40.625rem;
-  background: url("img/bg_video.jpg") center center no-repeat;
+  background: url("../img/bg_video.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
   display: flex;
@@ -1450,7 +1451,7 @@ body {
 
 .delivery {
   min-height: 40.625rem;
-  background: url("img/bg_delivery.jpg") center center no-repeat;
+  background: url("../img/bg_delivery.jpg") center center no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -1632,7 +1633,7 @@ body {
   background-color: #ffffff; }
 
 .fake-checkbox:after {
-  content: url("img/check.png");
+  content: url("../img/check.png");
   display: inline-block;
   position: absolute;
   top: 50%;

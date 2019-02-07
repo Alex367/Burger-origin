@@ -3,10 +3,9 @@
 }
 .team{
 	min-height: rem(650px);
-	background: url("img/bg_team.jpg") center center no-repeat;
+	background: url("../img/bg_team.jpg") center center no-repeat;
 	background-size: cover;
 	position: relative;
-	// min-height: 100%;
 }
 .team__title{
 	margin-top: 0;
@@ -14,16 +13,11 @@
 }
 .team__biggest-block{
 	position: absolute;
-	// height: auto;
-	// min-height: rem(650px);
-	// height: 102vh;
-	// max-height:100%; 
 	width: 50%;
 	height: 100%;
 	background-color: #2f3234;
 	background-size: cover;
 	opacity: 0.93;
-	// left: 50%;
 	right: 0;
 	display: flex;
 	justify-content: center;
@@ -43,13 +37,8 @@
 	flex-direction: column;
 	width: rem(450px);
 	
-	// height: rem(391px);
-	// height: 100%;
 	@include tablets {
 		display: block;
-		// max-height: 100%;
-		// text-align: center;
-		// justify-content: center;
 	}
 }
 .team-elements{

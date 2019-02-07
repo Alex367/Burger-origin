@@ -1,19 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 2 of C:\xampp\htdocs\burger_origin\aside_b.scss, in `tablets'
-        from line 2 of C:\xampp\htdocs\burger_origin\aside_b.scss
+        on line 28 of C:\xampp\htdocs\burger_origin\style\team.scss, in `tablets'
+        from line 28 of C:\xampp\htdocs\burger_origin\style\team.scss
 
-1: .fixed-menu {
-2:   @include tablets {
-3:     display: none;
-4:   }
-5:   margin: 0;
-6:   padding: 0;
-7:   position: fixed;
+23: 	justify-content: center;
+24: 	padding: rem(50px);
+25: 	padding-top: rem(113px);
+26: 	padding-left: rem(97px);
+27: 
+28: 	@include tablets {
+29: 		width: 100%;
+30: 		left: 0;
+31: 		text-align: center;
+32: 		padding-top: rem(80px);
+33: 	}
 
 Backtrace:
-C:\xampp\htdocs\burger_origin\aside_b.scss:2:in `tablets'
-C:\xampp\htdocs\burger_origin\aside_b.scss:2
+C:\xampp\htdocs\burger_origin\style\team.scss:28:in `tablets'
+C:\xampp\htdocs\burger_origin\style\team.scss:28
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -62,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 2 of C:\xampp\htdocs\burger_origin\aside_b.scss, in `tablets'\A         from line 2 of C:\xampp\htdocs\burger_origin\aside_b.scss\A \A 1: .fixed-menu {\A 2:   @include tablets {\A 3:     display: none;\A 4:   }\A 5:   margin: 0;\A 6:   padding: 0;\A 7:   position: fixed;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 28 of C:\xampp\htdocs\burger_origin\style\team.scss, in `tablets'\A         from line 28 of C:\xampp\htdocs\burger_origin\style\team.scss\A \A 23: 	justify-content: center;\A 24: 	padding: rem(50px);\A 25: 	padding-top: rem(113px);\A 26: 	padding-left: rem(97px);\A 27: \A 28: 	@include tablets {\A 29: 		width: 100%;\A 30: 		left: 0;\A 31: 		text-align: center;\A 32: 		padding-top: rem(80px);\A 33: 	}"; }

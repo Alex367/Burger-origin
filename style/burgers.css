@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 17 of C:\xampp\htdocs\burger_origin\contacts.scss, in `phones'
-        from line 17 of C:\xampp\htdocs\burger_origin\contacts.scss
+        on line 10 of C:\xampp\htdocs\burger_origin\style\burgers.scss, in `phones'
+        from line 10 of C:\xampp\htdocs\burger_origin\style\burgers.scss
 
-12: 	position: absolute;
-13: 	top: 0;
-14: 	width: 100%;
-15: 	height: 95%;
-16: 
-17: 	@include phones {
-18: 		height: 90%;
-19: 	}
-20: 
-21: 	// position: relative;
-22: 	// .contacts__img-map1{
+5: 	background-color: #f9b43b;
+6: 	background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+7: 	width: 100%;
+8: 	display: flex;
+9: 
+10: 	@include phones {
+11: 		position: relative;	
+12: 	}
+13: }
+14: .burgers__left{
+15: 	display: flex;
 
 Backtrace:
-C:\xampp\htdocs\burger_origin\contacts.scss:17:in `phones'
-C:\xampp\htdocs\burger_origin\contacts.scss:17
+C:\xampp\htdocs\burger_origin\style\burgers.scss:10:in `phones'
+C:\xampp\htdocs\burger_origin\style\burgers.scss:10
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 17 of C:\xampp\htdocs\burger_origin\contacts.scss, in `phones'\A         from line 17 of C:\xampp\htdocs\burger_origin\contacts.scss\A \A 12: 	position: absolute;\A 13: 	top: 0;\A 14: 	width: 100%;\A 15: 	height: 95%;\A 16: \A 17: 	@include phones {\A 18: 		height: 90%;\A 19: 	}\A 20: \A 21: 	// position: relative;\A 22: 	// .contacts__img-map1{"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 10 of C:\xampp\htdocs\burger_origin\style\burgers.scss, in `phones'\A         from line 10 of C:\xampp\htdocs\burger_origin\style\burgers.scss\A \A 5: 	background-color: #f9b43b;\A 6: 	background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);\A 7: 	width: 100%;\A 8: 	display: flex;\A 9: \A 10: 	@include phones {\A 11: 		position: relative;	\A 12: 	}\A 13: }\A 14: .burgers__left{\A 15: 	display: flex;"; }
