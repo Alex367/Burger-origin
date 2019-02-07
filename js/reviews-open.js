@@ -1,4 +1,4 @@
-$('.reviews-elements').ready(function(){
+$('.reviews-elements__items').ready(function(){
 	$('.reviews-elements__items').addClass('loaded');
 });//load photo
 //reviews
